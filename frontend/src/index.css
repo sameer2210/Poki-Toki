@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -25,6 +25,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  justify-content: center;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -65,4 +66,61 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+
+
+
+:root {
+  /* Matches the font imported in App.css */
+  font-family: 'Outfit', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Force Dark Mode base */
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #090014; /* Matches our App.css dark background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- COOL SELECTION HIGHLIGHT --- */
+/* When you select text, it turns Neon Pink */
+::selection {
+  background: #ff005c;
+  color: white;
+}
+
+/* --- GLOBAL SCROLLBARS --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090014;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+  border: 2px solid #090014; /* Creates a padding effect */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff005c; /* Hover becomes pink */
+}
+
+body {
+  margin: 0;
+  /* REMOVED: display: flex & place-items: center */
+  /* This allows the app to take up the full screen height */
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Basic Reset for buttons if used outside App.css */
+button {
+  cursor: pointer;
 }
