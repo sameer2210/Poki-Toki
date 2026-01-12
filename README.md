@@ -1,6 +1,6 @@
 # 💬 Poki-Toki
 
-![chat](/frontend/ui.pngui.png)
+![chat](/frontend/ui.jpeg)
 
 **A lightweight, real-time chat application powered by React, Node.js, and Google Gemini AI.**
 
